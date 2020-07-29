@@ -1,0 +1,16 @@
+<h1>The ng-template example</h1>
+
+<p>Shows the default template</p>
+<app-error-card-with-template></app-error-card-with-template>
+
+<p>Shows the provided template</p>
+<app-error-card-with-template
+  [template]="googleItTemplate"
+></app-error-card-with-template>
+
+<ng-template #googleItTemplate>
+  Another error text
+  <div>
+    <a href="google.com">Google it</a>
+  </div>
+</ng-template>

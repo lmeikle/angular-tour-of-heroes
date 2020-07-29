@@ -16,6 +16,10 @@ import { GuestCardComponent } from './dynamic-componets/guest-card/guest-card.co
 import { UserCardComponent } from './dynamic-componets/user-card/user-card.component';
 import { ProfileHostDirective } from './profile-host.directive';
 import { ProfileComponent } from './dynamic-componets/profile/profile.component';
+import { NgContentExampleComponent } from './content-container-template/ng-content-example/ng-content-example.component';
+import { ErrorCardComponent } from './content-container-template/ng-content-example/error-card/error-card.component';
+import { NgTemplateExampleComponent } from './content-container-template/ng-template-example/ng-template-example.component';
+import { ErrorCardWithTemplateComponent } from './content-container-template/ng-template-example/error-card-with-template/error-card-with-template.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { ProfileComponent } from './dynamic-componets/profile/profile.component'
     UserCardComponent,
     ProfileHostDirective,
     ProfileComponent,
+    NgContentExampleComponent,
+    ErrorCardComponent,
+    NgTemplateExampleComponent,
+    ErrorCardWithTemplateComponent,
   ],
   imports: [
     BrowserModule,

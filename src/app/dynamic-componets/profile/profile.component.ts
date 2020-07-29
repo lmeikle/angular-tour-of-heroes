@@ -9,7 +9,12 @@ import { Subject } from 'rxjs';
  */
 @Component({
   selector: 'app-profile-container',
-  template: ` <ng-template appProfileHost></ng-template> `,
+  template: `
+    <h1>
+      Dynamic Component Example
+    </h1>
+    <ng-template appProfileHost></ng-template>
+  `,
 })
 export class ProfileComponent implements OnInit, OnDestroy {
   @ViewChild(ProfileHostDirective, { static: true })
