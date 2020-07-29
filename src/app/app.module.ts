@@ -12,6 +12,10 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { GuestCardComponent } from './dynamic-componets/guest-card/guest-card.component';
+import { UserCardComponent } from './dynamic-componets/user-card/user-card.component';
+import { ProfileHostDirective } from './profile-host.directive';
+import { ProfileComponent } from './dynamic-componets/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
+    GuestCardComponent,
+    UserCardComponent,
+    ProfileHostDirective,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
