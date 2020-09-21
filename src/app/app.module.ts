@@ -6,7 +6,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +21,9 @@ import { ErrorCardComponent } from './content-container-template/ng-content-exam
 import { NgTemplateExampleComponent } from './content-container-template/ng-template-example/ng-template-example.component';
 import { ErrorCardWithTemplateComponent } from './content-container-template/ng-template-example/error-card-with-template/error-card-with-template.component';
 import { RxjsPlaygroundComponent } from './rxjs-playground/rxjs-playground.component';
+import { FavoriteColorComponent } from './forms/reactive/favorite-color/favorite-color.component';
+import { FavoriteColorComponent as TemplateDrivenFavoriteColorComponent } from './forms/template-driven/favorite-color/favorite-color.component';
+import { FormsComponent } from './forms/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +42,16 @@ import { RxjsPlaygroundComponent } from './rxjs-playground/rxjs-playground.compo
     NgTemplateExampleComponent,
     ErrorCardWithTemplateComponent,
     RxjsPlaygroundComponent,
+    FavoriteColorComponent,
+    TemplateDrivenFavoriteColorComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
