@@ -24,6 +24,7 @@ import { RxjsPlaygroundComponent } from './rxjs-playground/rxjs-playground.compo
 import { FavoriteColorComponent } from './forms/reactive/favorite-color/favorite-color.component';
 import { FavoriteColorComponent as TemplateDrivenFavoriteColorComponent } from './forms/template-driven/favorite-color/favorite-color.component';
 import { FormsComponent } from './forms/forms/forms.component';
+import { HeroFormComponent } from './forms/template-driven/hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { FormsComponent } from './forms/forms/forms.component';
     FavoriteColorComponent,
     TemplateDrivenFavoriteColorComponent,
     FormsComponent,
+    HeroFormComponent,
   ],
   imports: [
     BrowserModule,
