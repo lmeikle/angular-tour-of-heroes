@@ -26,6 +26,8 @@ import { FavoriteColorComponent as TemplateDrivenFavoriteColorComponent } from '
 import { FormsComponent } from './forms/forms/forms.component';
 import { HeroFormComponent } from './forms/template-driven/hero-form/hero-form.component';
 import { ForbiddenNameValidatorDirective } from './forms/template-driven/favorite-color/forbidden-name-validator.directive';
+import { DynamicFormComponent } from './forms/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './forms/dynamic-form/dynamic-form-question/dynamic-form-question.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { ForbiddenNameValidatorDirective } from './forms/template-driven/favorit
     FormsComponent,
     HeroFormComponent,
     ForbiddenNameValidatorDirective,
+    DynamicFormComponent,
+    DynamicFormQuestionComponent,
   ],
   imports: [
     BrowserModule,

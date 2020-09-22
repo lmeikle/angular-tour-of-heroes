@@ -2,3 +2,8 @@
 <app-reactive-favorite-color></app-reactive-favorite-color>
 <app-template-driven-favorite-color></app-template-driven-favorite-color>
 <app-hero-form></app-hero-form>
+
+<div>
+  <h2>Dynamic Form - Job Application for Heroes</h2>
+  <app-dynamic-form [questions]="questions$ | async"></app-dynamic-form>
+</div>
