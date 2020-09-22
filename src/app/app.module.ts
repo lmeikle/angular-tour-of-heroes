@@ -25,6 +25,7 @@ import { FavoriteColorComponent } from './forms/reactive/favorite-color/favorite
 import { FavoriteColorComponent as TemplateDrivenFavoriteColorComponent } from './forms/template-driven/favorite-color/favorite-color.component';
 import { FormsComponent } from './forms/forms/forms.component';
 import { HeroFormComponent } from './forms/template-driven/hero-form/hero-form.component';
+import { ForbiddenNameValidatorDirective } from './forms/template-driven/favorite-color/forbidden-name-validator.directive';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { HeroFormComponent } from './forms/template-driven/hero-form/hero-form.c
     TemplateDrivenFavoriteColorComponent,
     FormsComponent,
     HeroFormComponent,
+    ForbiddenNameValidatorDirective,
   ],
   imports: [
     BrowserModule,

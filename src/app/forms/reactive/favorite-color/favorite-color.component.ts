@@ -5,7 +5,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { forbiddenNameValidator } from './forbidden-name.directive';
+import { forbiddenNameValidator } from './forbidden-name';
 
 @Component({
   selector: 'app-reactive-favorite-color',

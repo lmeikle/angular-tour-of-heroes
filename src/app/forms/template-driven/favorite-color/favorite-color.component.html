@@ -1,3 +1,31 @@
 <h2>Template Driven Form Example</h2>
 
-Favorite Color: <input type="text" [(ngModel)]="favoriteColor" />
+Simple Favorite Color: <input type="text" [(ngModel)]="favoriteColor" />
+
+<br /><br />
+Name with validation:
+<input
+  id="name"
+  name="name"
+  class="form-control"
+  required
+  minlength="4"
+  appForbiddenName="bobby"
+  [(ngModel)]="hero.name"
+  #name="ngModel"
+/>
+
+<div
+  *ngIf="name.invalid && (name.dirty || name.touched)"
+  class="alert alert-danger"
+>
+  <div *ngIf="name.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors.forbiddenName">
+    Name cannot be Bobby.
+  </div>
+</div>

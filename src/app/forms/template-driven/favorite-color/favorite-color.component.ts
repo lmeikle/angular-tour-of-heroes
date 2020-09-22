@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class FavoriteColorComponent implements OnInit {
   favoriteColor = '';
 
+  hero = {
+    name: 'Lara',
+  };
+
   ngOnInit(): void {
     this.favoriteColor = 'Red';
   }
