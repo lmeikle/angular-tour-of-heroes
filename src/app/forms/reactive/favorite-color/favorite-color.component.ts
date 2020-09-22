@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {
+  FormArray,
   FormBuilder,
   FormControl,
   FormGroup,
@@ -28,6 +29,7 @@ export class FavoriteColorComponent implements OnInit {
       state: new FormControl(''),
       zip: new FormControl(''),
     }),
+    aliases: new FormArray([new FormControl('')]),
   });
 
   // same profile form built using the FormBuilder helper
@@ -40,6 +42,9 @@ export class FavoriteColorComponent implements OnInit {
       state: [''],
       zip: [''],
     }),
+    aliases: this.fb.array([
+      this.fb.control('')
+    ])
   });
   */
 
@@ -73,5 +78,14 @@ export class FavoriteColorComponent implements OnInit {
 
   get firstName() {
     return this.profileForm.get('firstName');
+  }
+
+  get aliases() {
+    return this.profileForm.get('aliases') as FormArray;
+  }
+
+  addAlias() {
+    this.aliases.push(new FormControl(''));
+    //this.aliases.push(this.fb.control('')); same as above if using the Form Builder
   }
 }
